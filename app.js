@@ -1,23 +1,8 @@
 const express = require("express");
 const app = express();
-
+const router = require('./routes/index');
 // テンプレートエンジンの指定
-app.set("view engine", "ejs");
-
-// app.get("/", function (req, res) {
-//     // レンダリングを行う
-//     res.render("./login.ejs");
-// });
-
-// app.get("/regist", function (req, res) {
-//     // レンダリングを行う
-//     res.render("./regist.ejs");
-// });
-
-let loginRouter = require('./routes/login');
-app.use('/', loginRouter);
-
-let registRouter = require('./routes/regist');
-app.use('/regist', registRouter);
+app.set('view engine', 'ejs');
+app.use('/', router);
 
 app.listen(3000);

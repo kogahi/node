@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta content="text/html; charset=UTF-8">
+        <script>
+            function setId() {
+                location.href = "/";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>ログイン画面</h1>
+        </header>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="mailAddress">Email-Address</label>
+        <input type="text" name="mailAddress" id="mailAddress">
+        <label for="pasword">password</label>
+        <input type="text" name="pasword" id="pasword">
+        <label for="cfmPasword">Confirm-password</label>
+        <input type="text" name="cfmPasword" id="cfmPasword">
+        <button>Register</button>
+        <button onclick="setId();">back</button>
+    </body>
+</html>

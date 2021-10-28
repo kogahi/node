@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta content="text/html; charset=UTF-8">
+        <script>
+            function setId() {
+                location.href = "/";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>ホーム画面</h1>
+        </header>
+        <label for="user"><%= req.body.name%>　loggled in </label>
+        <button onclick="setId();">ログアウト</button>
+    </body>
+</html>
